@@ -7,6 +7,8 @@
 # Build
 
 ```
+(cd micronaut \
+    && mvn clean install)
 (cd spring \
     && mvn clean install)
 ```
@@ -19,6 +21,16 @@ as no
 server is running right now.
 
 # Demo
+
+## Micronaut
+
+```
+(cd micronaut \
+    && mvn mn:run)
+```
+
+Reload `index.htm`: The video will be displayed and even selecting unbuffered parts of the video can
+be selected.
 
 ## NGINX
 
@@ -38,7 +50,8 @@ Reload `index.htm` to make sure NGINX is stopped and the video is not being disp
 ## Spring
 
 ```
-(cd spring && java -jar target/spring-boot-range-header-1.0-SNAPSHOT.jar)
+(cd spring \
+  && java -jar target/spring-boot-range-header-1.0-SNAPSHOT.jar)
 ```
 
 Reload `index.htm`: The video will be displayed and even selecting unbuffered parts of the video can

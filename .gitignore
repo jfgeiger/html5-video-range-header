@@ -1,4 +1,6 @@
 .idea
 
+micronaut/target
+
 spring/.idea
 spring/target
